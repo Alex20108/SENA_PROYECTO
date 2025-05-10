@@ -1,0 +1,396 @@
+body {
+  background: #ccc;
+  font-family: Arial, serif; }
+
+/********************************************************* */
+.box_round {
+  border-radius: 12px;
+  background-clip: padding-box; }
+
+/********************************************************* */
+footer p {
+  padding: 20px; }
+
+.clear {
+  clear: both; }
+
+.container {
+width: 1100px;
+height: 60px;;
+margin: 0 auto; }
+
+.instrucciones {
+  position: absolute;
+  width: 431px;
+  height: 32px;
+  left:289px;
+  top:27px;
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+#bt_inicio {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 930px;
+  top: 77px;
+  z-index: 99999;
+  cursor: pointer;
+}
+  #bt_inicio:hover {
+
+  }
+
+
+.encabezado {
+    position: absolute;
+    height: 60px;
+    /*right: 175px;*/
+    top: -20px;
+}
+
+.encabezado__titulo {
+ }
+.encabezado__titulo h1 {
+  font: 900 22px/1.4em Helvetica, sans-serif;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding-top: 24px;
+  color: #0B4487; }
+
+.encabezado__audio {
+}
+  .encabezado__audio span {
+    font-size: 12px;
+    color: #333;
+    font-weight: 400;
+    letter-spacing: 0px; }
+
+  /*-------- toogle --------*/
+  .toogle-container {
+    display: inline-block;
+    height: 70px;
+    width: 105px;
+    position: relative;
+    top: 12px; }
+
+  .toggle {
+    height: 30px;
+    margin: 5px auto;
+    width: 70px; }
+
+  .toggle-on.active {
+    text-indent: 16px !important; }
+
+  .toggle-off.active {
+    text-indent: 27px !important; }
+
+#instrucciones {
+  display: block;
+  width: 200px;
+  position: absolute;
+  left: 36px;
+  top: 584px; }
+  #instrucciones p {
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+    color: #404040;
+    font: 400 14px/1.4em "helvetica", sans-serif; }
+
+
+
+.right span {
+  font-size: 14px;
+  color: #fff; }
+
+ul, li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+
+#wrap {
+  position: relative;
+  margin: 10px auto;
+  width: 1100px; }
+
+#lienzo {
+  float: left;
+  position: relative;
+  width: 1100px;
+  height: 618px;
+  background: url("../images/fondo_act.png") top left no-repeat scroll;
+  margin: 40px 0px; }
+
+
+.concepto {
+  cursor: move; }
+
+
+.conceptocss {
+    position: absolute;
+    width: 189px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #9e9e9e;
+    border-radius: 8px; 
+}
+
+.conceptocss:nth-child(1) {
+    left: 900px;
+    top: 116px;
+}
+.conceptocss:nth-child(2) {
+    left: 900px;
+    top: 164px;
+}
+.conceptocss:nth-child(3) {
+    left: 900px;
+    top: 210px;
+}
+.conceptocss:nth-child(4) {
+    left: 900px;
+    top: 255px;
+}
+.conceptocss:nth-child(5) {
+    left: 900px;
+    top: 301px;
+}
+.conceptocss:nth-child(6) {
+    left: 900px;
+    top: 345px;
+}
+.conceptocss:nth-child(7) {
+    left: 900px;
+    top: 390px;
+}
+.conceptocss:nth-child(8) {
+    left: 900px;
+    top: 435px;
+}
+
+.sin_borde {
+  background: #e3e5e5;
+  border: 0px;
+}
+
+#conceptos ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center; }
+  #conceptos ul li {
+    position: absolute;
+    width: 189px;
+    height: 35px; }
+    #conceptos ul li:nth-child(1) {
+      left: 263px;
+      top: 530px; }
+    #conceptos ul li:nth-child(2) {
+      left: 473px;
+      top: 530px; }
+    #conceptos ul li:nth-child(3) {
+      left: 681px;
+      top: 530px; }
+    #conceptos ul li:nth-child(4) {
+      left: 890px;
+      top: 530px; }
+    #conceptos ul li:nth-child(5) {
+      left: 263px;
+      top: 573px; }
+    #conceptos ul li:nth-child(6) {
+      left: 473px;
+      top: 573px; }
+    #conceptos ul li:nth-child(7) {
+      left: 681px;
+      top: 573px; }
+    #conceptos ul li:nth-child(8) {
+      left: 890px;
+      top: 573px; }
+
+.bgresultados {
+    background: url('../images/fondo_resultados.png') center center no-repeat !important;
+}
+
+.selected {
+ border-radius: 8px;
+ background: rgba(240, 240, 240, 0.4); }
+
+/*------------------- cinta de resultados --------------- */
+.circulo {
+  position: absolute;
+  z-index: 10;
+  width: 33px; height: 33px;
+   background: url("../images/bt_normal.png") no-repeat left top scroll;
+
+    }
+  .circulo.gano {
+    background: url("../images/bt_bien.png") no-repeat left top scroll;
+    display: block; }
+  .circulo.perdio {
+    background: url("../images/bt_mal.png") no-repeat left top scroll;
+    display: block; }
+
+.c1 {
+  top: 118px; left: 837px; }
+.c2 {
+  top: 164px; left: 837px; }
+.c3 {
+  top: 210px; left: 837px; }
+.c4 {
+  top: 255px; left: 837px; }
+.c5 {
+  top: 301px; left: 837px; }
+.c6 {
+  top: 345px; left: 837px; }
+.c7 {
+top: 390px; left: 837px; }
+.c8 {
+top: 435px; left: 837px; }
+
+/* Personaje */
+#personaje_cara {
+  position:absolute; left: 16px; top: 135px;
+  height: 170px;
+  background-image: url("../images/sprite_caras.png");
+  background-repeat: no-repeat;
+  line-height: 170px;
+  width: 115px;
+  z-index: 92;
+}
+
+#personaje_cara.normal {
+  background-position: 0 0;
+}
+
+#personaje_cara.perdio {
+  background-position: -230px 0;
+  display: block;
+}
+
+#personaje_cara.gano {
+  background-position: -115px 0;
+  display: block;
+}
+
+#personaje_cuerpo {
+  position: absolute;
+  width: 347px;
+  height: 440px;
+  left: 0px;
+  bottom: 3px;
+  background: url('../images/cuerpo_personaje.png') top left no-repeat;
+}
+
+
+/************************** Resultados   ********************************/
+
+.circulo_gris {
+    background: #424142;
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    border-radius: 50%;
+    left: 80px;
+    bottom: 24px;
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 97px;
+    top: 429px;
+    color: #fff;
+}
+
+.circle strong {
+    font-size: 30px;
+    font-weight: 900;
+    left: 0px;
+    line-height: 150px;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+
+#resultados {
+  position: relative;
+  width: 1100px;
+  height: 623px;
+  z-index: 100;
+  /*background: rgba(0, 0, 0, 0.6);*/
+}
+
+.estadistica__titulo {
+    position: absolute;
+    width: 163px;
+    height: 22px;
+    left: 107px;
+    top: 281px;
+}
+.estadistica__numero {
+  width: 109px;
+  height: 37px;
+
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #51564d;
+}
+
+.estadistica__mensaje {
+    width: 340px;
+    height: 60px;
+    position: absolute;
+    left: 16px;
+    top: 340px;
+}
+
+.estadistica__mensaje p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0px;
+  padding: 12px 0px 0px;
+  margin: 0px;
+  color: #50554F;
+  margin: 0px;}
+
+  p.nopadding {
+    padding-top: 0px;
+  }
+
+#instrucciones_bottom {
+    position:absolute;
+    width: 120px;
+    left:145px;
+    bottom: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.bt__jugar-de-nuevo {
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 571px;
+    top: 547px;
+    background: url(../images/bt_volver.png) no-repeat left top;
+    z-index: 1000;
+}
+  .bt__jugar-de-nuevo:hover {background: url("../images/bt_volver_hover.png") no-repeat left top; cursor: pointer;}
+
+  .bt__siguiente {
+    position: absolute;
+    width: 147px;
+    height: 30px;
+    left: 581px;
+    top: 397px;
+    background: url(../images/bt_siguiente_act.png) no-repeat left top;
+}
+  .bt__siguiente:hover {background: url("../images/bt_siguiente_act_hover.png") no-repeat left top; cursor: pointer;}

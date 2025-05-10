@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+	  	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	       More info: h5bp.com/i/378 -->
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	  	<title>OA Versionamiento de Código con Git</title>
+	  	<meta name="description" content="Actividad de afianzamiento SENA">
+
+	  	<!-- Mobile viewport optimized: h5bp.com/viewport -->
+	  	<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="js/toogle/css/toggles.css">
+	    <link rel="stylesheet" href="js/toogle/css/themes/toggles-light.css">
+
+		<link rel="stylesheet" type="text/css" href="css/estilos_relacionar.css?v=2">
+
+
+	</head>
+  	<body>
+
+		<!--<div class="container">
+				<div class="encabezado">
+							        <div class="encabezado__titulo">
+							          <h1></h1>
+							        </div>
+							        <div class="encabezado__audio">
+							            <span>¿Audio?</span>
+							           <div class="toogle-container">
+							              <div class="toggle toggle-light"></div>
+							            </div>
+							        </div>
+							    </div>
+		</div>-->
+  		<section id='wrap'>
+	  		<form name='test' id='test'></form>
+	  		<div id='lienzo' class='box_round'>
+
+
+				<!--<div class="encabezado">
+			        <div class="encabezado__titulo">
+			          <h1></h1>
+			        </div>
+			        <div class="encabezado__audio">
+			            <span>¿Audio?</span>
+			           <div class="toogle-container">
+			              <div class="toggle toggle-light"></div>
+			            </div>
+			        </div>
+			    </div>-->
+
+				<p class="instrucciones">Relacionar los conceptos con el término correspondiente.</p>
+
+
+				<div id="personaje_cara" class="default"></div>
+				<div id="personaje_cuerpo"></div>
+
+
+	  			<div id='preguntas'>
+			  		<div id='concepto1' class='question conceptocss concepto1'>
+			  			<div class='respuesta'>
+			  				<ul class='unstyled'></ul>
+			  			</div>
+			  		</div>
+
+
+			  		<div id='concepto2' class='question conceptocss concepto2'>
+			  			<div class='respuesta'>
+			  				<ul class='unstyled'></ul>
+			  			</div>
+			  		</div>
+
+
+			  		<div id='concepto3' class='question conceptocss concepto3'>
+			  			<div class='respuesta'>
+			  				<ul class='unstyled'></ul>
+			  			</div>
+			  		</div>
+
+
+			  		<div id='concepto4' class='question conceptocss concepto4'>
+			  			<div class='respuesta'>
+			  				<ul class='unstyled'></ul>
+			  			</div>
+			  		</div>
+
+
+			  		<div id='concepto5' class='question conceptocss concepto5'>
+			  			<div class='respuesta'>
+			  				<ul class='unstyled'></ul>
+			  			</div>
+			  		</div>
+
+					<div id='concepto6' class='question conceptocss concepto6'>
+						<div class='respuesta'>
+							<ul class='unstyled'></ul>
+						</div>
+					</div>
+
+					<div id='concepto7' class='question conceptocss concepto7'>
+						<div class='respuesta'>
+							<ul class='unstyled'></ul>
+						</div>
+					</div>
+
+
+					<div id='concepto8' class='question conceptocss concepto8'>
+						<div class='respuesta'>
+							<ul class='unstyled'></ul>
+						</div>
+					</div>
+
+			  	</div>
+
+		  		<div id='conceptos'>
+					<ul>
+						<li class='concepto' id='resp4'><img src="images/bt1.png"></li>
+						<li class='concepto' id='resp5'><img src="images/bt2.png"></li>
+						<li class='concepto' id='resp2'><img src="images/bt3.png"></li>
+						<li class='concepto' id='resp7'><img src="images/bt4.png"></li>
+						<li class='concepto' id='resp8'><img src="images/bt5.png"></li>
+						<li class='concepto' id='resp3'>
+							<img src="images/bt6.png">
+						</li>
+						<li class='concepto' id='resp1'>
+							<img src="images/bt7.png">
+						</li>
+						<li class='concepto' id='resp6'>
+							<img src="images/bt8.png">
+						</li>
+					</ul>
+		  		</div>
+		  		
+		  		<div id="instrucciones_bottom">
+                    CLIC <br> PARA  <br> ARRASTRAR
+		  		</div>
+
+				<!--<div id='textos'>
+					<div><p>Es el lenguaje por el cual se puede acceder a las bases de datos relacionales.</p></div>
+					<div><p>Es el uso de instrucciones por el cual se puede acceder a las bases de datos relacionales.</p></div>
+					<div><p>Contienen todas las instrucciones relacionadas con la creación, modificación y eliminación de objetos de la base de datos.</p></div>
+					<div><p>Se encuentran las sentencias que permiten manipular los datos a partir de comandos de inserción, modificación, eliminación y consulta.</p></div>
+					<div><p>Contiene todas las sentencias relacionadas con la seguridad de acceso a los datos.</p></div>
+					<div><p>Los campos que se encuentran sin ningún tipo de información se denomina.</p></div>
+					<div><p>Es una sentencia SELECT que aparece dentro de otra sentencia SELECT.</p></div>
+					<div><p>Se utiliza para agregar los registros a una tabla.</p></div>
+					<div><p>Identifica una columna que no puede tener valores repetidos en toda la tabla.</p></div>
+					<div><p>Se utiliza para crear una tabla.</p></div>
+		  		</div>-->
+
+
+
+				<div id="resultados">
+					<div class="estadistica">
+				
+						<div class="estadistica__titulo">
+							<img src="images/titulo_resultados.png">
+						</div>
+				
+						<div class="estadistica__mensaje">
+							<p class="estadistica__copy"></p>
+						</div>
+				
+						<div class="circulo_gris"></div>
+				
+						<div class="resultados circle">
+							<strong>90
+								<i>%</i>
+							</strong>
+						</div>
+				
+					</div>
+				
+				</div>
+
+				<div class="bt__jugar-de-nuevo"></div>
+
+  				<div style='clear:both'></div>
+
+				<div class='sonidos'>
+					<audio preload>
+					  <source src='audios/screen-change.mp3' type='audio/mp3'>
+					  <source src='audios/screen-change.ogg' type='audio/ogg'>
+					</audio>
+					<audio preload>
+					  <source src='audios/success.mp3' type='audio/mp3'>
+					  <source src='audios/success.ogg' type='audio/ogg'>
+					</audio>
+					<audio preload>
+					  <source src='audios/fail.mp3' type='audio/mp3'>
+					  <source src='audios/fail.ogg' type='audio/ogg'>
+					</audio>
+					<audio preload>
+					  <source src='audios/end-game-success.mp3' type='audio/mp3'>
+					  <source src='audios/end-game-success.ogg' type='audio/ogg'>
+					</audio>
+					<audio preload>
+					  <source src='audios/end-game-fail.mp3' type='audio/mp3'>
+					  <source src='audios/end-game-fail.ogg' type='audio/ogg'>
+					</audio>
+				</div>
+
+				<div id='cinta'>
+					<!-- <div class='cinta'> -->
+						<div class='c1 circulo normal'></div>
+						<div class='c2 circulo normal'></div>
+						<div class='c3 circulo normal'></div>
+						<div class='c4 circulo normal'></div>
+						<div class='c5 circulo normal'></div>
+						<div class='c6 circulo normal'></div>
+						<div class='c7 circulo normal'></div>
+						<div class='c8 circulo normal'></div>
+					<!-- </div> -->
+				</div>
+
+
+	  		</div>
+
+
+			<div class='clear'><br style='line-height: 40px'></div>
+
+	  	</section>
+  	</body>
+	<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js" type="text/javascript"></script>
+	<script src="js/toogle/toggles.min.js" type="text/javascript"></script>
+	<script src="js/plugins.js?v=1.4" type="text/javascript"></script>
+	<script src="js/relacionar.js?v=1.3" charset="utf-8"></script>
+</html>
